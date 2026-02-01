@@ -23,7 +23,6 @@ public class Scannermethod {
     }
     public static void getUserId(Scanner sc){
         System.out.println("Enter your ID: ");
-        String
     }
 }
 

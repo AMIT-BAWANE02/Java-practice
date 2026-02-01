@@ -13,5 +13,18 @@ public class oneAndTwoDarray {
             System.out.print(oneD[i] + " ");
 
         }
+        System.out.println();
+        System.out.println();
+        
+
+        //PRINT 2D ARRAY
+        System.out.println("2D Array:");
+        for (int i = 0; i < twoD.length; i++) { // < instead of <=
+            for (int j = 0; j < twoD[i].length; j++) { // < instead of <=
+                System.out.print(twoD[i][j] + " ");
+            }
+            System.out.println();
+
+        }
     }
 }
