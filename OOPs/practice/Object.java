@@ -1,3 +1,4 @@
+
 public class Object {
     int num =5;
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class Object {
         public void display() {
             int b=10;   
             System.out.println("This is an inner class"+ b);
-        }
+}
+        
     }
 }
