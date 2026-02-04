@@ -30,7 +30,6 @@ public class Main {
     System.out.println("Quotient: " + quotient);
     
     // Using AdvancedCal static class
-    
     double powerResult = Cal.AdvancedCal.power(2, 3);
     System.out.println("2 raised to the power of 3 is: " + powerResult);
     }
