@@ -5,6 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "files.exclude": {
+                "**/*.class": true
+            }
+        },
+        {
             "type": "java",
             "name": "Main",
             "request": "launch",
@@ -65,5 +70,6 @@
             "request": "launch",
             "mainClass": "${file}"
         }
+
     ]
 }
