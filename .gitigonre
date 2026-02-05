@@ -1,0 +1,57 @@
+*.class
+.vscode/
+.settings/
+.project
+target/
+# Java
+*.class
+
+# VS Code
+.vscode/
+
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+
+/*
+✅ 2. Now Remove Already-Tracked .class Files
+
+You must tell Git:
+
+“Stop tracking these files, but don’t delete them from my computer.”
+
+Run this in your project root:
+
+git rm --cached -r *.class
+
+
+If that doesn’t remove all, also run:
+
+git rm --cached -r .
+git add .
+
+
+(This re-adds everything except ignored files.)
+
+✅ 3. Commit the Removal
+
+Now commit:
+
+git commit -m "Remove class files and update gitignore"
+
+✅ 4. Push to GitHub
+git push
+
+✅ 5. After This → .class Will Never Upload Again
+
+From now on:
+
+✔ .class ignored
+✔ Clean repo
+✔ Professional style
+*/

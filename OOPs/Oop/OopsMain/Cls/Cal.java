@@ -11,7 +11,7 @@ public class Cal {
         return a - b;
     }
 
-     public int multiply(int a, int b) {
+    public int multiply(int a, int b) {
         return a * b;
     }
 
@@ -21,6 +21,21 @@ public class Cal {
         }
         return (double) a / b;
     }
+    
+    //creating exceptional Handling class
+    public static class ExceHand {
+        public static void demonstrateExceptionHandling() {
+            try{
+                int a= 100/0;
+                System.out.println("htis is excetional handling"+a);
+            }catch(Exception e){
+                System.out.println("this can not be possible");
+                System.out.println(e.getMessage());
+            }finally{
+                System.out.println("this is final and this can run");
+            }
+        }
+    }
 
     //creating static class
     public static class AdvancedCal {
@@ -28,7 +43,5 @@ public class Cal {
             return Math.pow(base, exponent);
         }
     }
-
-    
 
 }
