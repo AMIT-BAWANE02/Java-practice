@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Theme Toggle Example</title>
+    <style>
+        /* Default (Light Mode) */
+        body {
+            background-color: rgb(177, 238, 175);
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background-color: #ff9d9d;
+            color: rgb(255, 134, 134);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background-color: #008CBA;
+            color: white;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #005f73;
+        }
+
+        .project {
+            margin-top: 40px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+
+    </nav>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <button id="toggle-btn">Toggle Theme</button>
+    </div>
+
+    <div class="project">
+        <h2>PROJECTS</h2>
+        <ul>
+            <li><a href="darkmode.html">Dark Mode</a></li>
+            <li><a href="practice.html">Practice</a></li>
+        </ul>
+    </div>
+    <script>
+        const btn = document.getElementById('toggle-btn');
+
+        btn.onclick = () => {
+            document.body.classList.toggle('dark-mode');
+        };
+
+    </script>
+</body>
+
+</html>
